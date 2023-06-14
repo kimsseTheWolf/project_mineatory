@@ -10,7 +10,7 @@ const routers = [
 ]
 
 const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHistory(),
     routes: routers
 })
 
