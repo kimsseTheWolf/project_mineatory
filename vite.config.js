@@ -12,5 +12,15 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  css: {
+    preprocessorOptions: {
+      less: {
+        modifyVars: {
+          'border-radius-base': '5px'
+        },
+        javascriptEnabled: true,
+      }
+    }
   }
 })
