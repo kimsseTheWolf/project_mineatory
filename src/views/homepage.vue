@@ -20,7 +20,9 @@ function triggerWaitingMessage() {
     <div class="title">Project MINEATORY</div>
     <div style="margin-bottom: 5px">创建，编写，分享属于自己的设定和世界观！</div>
     <div style="display: flex; flex-direction: row">
-      <a-button type="primary" size="large" style="margin-right: 5px" @click="triggerWaitingMessage">即将开放注册</a-button>
+      <router-link to="/register">
+        <a-button type="primary" size="large" style="margin-right: 5px" @click="triggerWaitingMessage">加入Project MINEATORY</a-button>
+      </router-link>
       <a-button type="primary" size="large" shape="circle" @click="displayAnnounce = !displayAnnounce">
         <img src="@/assets/icons/Assets.svg" width="28">
       </a-button>
@@ -47,7 +49,7 @@ function triggerWaitingMessage() {
   margin: 0;
   padding: 10px;
   width: 100%;
-  height: 100vh;
+  flex: auto;
   justify-content: center;
   align-items: center;
   background-color: #125ea8;

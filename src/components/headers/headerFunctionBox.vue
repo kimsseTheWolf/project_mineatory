@@ -1,13 +1,15 @@
 <script setup>
 import {ref} from 'vue'
 
-const isLoginEnabled = ref(false)
+const isLoginEnabled = ref(true)
 </script>
 
 <template>
 <div class="header-function-box">
   <div v-if="isLoginEnabled">
-    <a-button class="inline-button" ghost>加入Project MINEATORY</a-button>
+    <router-link to="/register">
+      <a-button class="inline-button" ghost>加入Project MINEATORY</a-button>
+    </router-link>
     <a-button class="inline-button" ghost>登录</a-button>
   </div>
   <div v-if="!isLoginEnabled">

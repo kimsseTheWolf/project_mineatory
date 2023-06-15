@@ -4,7 +4,7 @@ import HeaderFunctionBox from "@/components/headers/headerFunctionBox.vue";
 
 <template>
 <div class="main-header-box">
-  <div class="title">Project MINEATORY</div>
+  <div class="title" id="mobile-hidden">Project MINEATORY</div>
   <header-function-box></header-function-box>
 </div>
 </template>
@@ -24,9 +24,5 @@ import HeaderFunctionBox from "@/components/headers/headerFunctionBox.vue";
   left: 0;
   background-color: dodgerblue;
   color: white;
-}
-.title {
-  font-size: 30px;
-  font-weight: bolder;
 }
 </style>

@@ -4,7 +4,9 @@ import HeaderBox from "@/components/headers/headerBox.vue";
 
 <template>
   <HeaderBox></HeaderBox>
-  <router-view></router-view>
+  <div class="body-flex">
+    <router-view></router-view>
+  </div>
 </template>
 
 <style scoped>
@@ -12,6 +14,6 @@ import HeaderBox from "@/components/headers/headerBox.vue";
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: fit-content;
+  height: 100vh;
 }
 </style>
